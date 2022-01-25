@@ -17,7 +17,7 @@
   <header>
     <div id="hamburgerBtn" onclick="openSideMenu()">
       <div class="bar1"></div>
-      <div class="bar2" style="width: 25px;background-color: #15A05D;"></div>
+      <div class="bar2" style="width: 25px;background-color: #15A05D;" id="crea"></div>
       <div class="bar3" style="width: 15px;"></div>
     </div>
     <div class="imgH">
@@ -32,7 +32,7 @@
     </div>
     <div><button class="get">Get the app</button></div>
   </header>
-  <a href="#"><button class="top">Go Top</button></a>
+  <a href="#"><button class="top" id="myBtn"><span>&#8680;</span></button></a>
   <nav class="navbar" id="primaryNav">
     <div id="hamburgerBtn" onclick="openSideMenu()">
       <div class="bar4"></div>
@@ -40,17 +40,20 @@
       <div class="bar6"></div>
     </div>
     <ul class="nav">
-      <li>Our Products</li>
-      <li>Contact Us</li>
-      <li><button class="get">Get the app</button></li>
-      <li><button class="get">Become an Agent</button></li>
+      <li class="link"><h1><span class="create3">Our Products</span></h1></li>
+      <li class="link"><h1><span class="create3">Contact Us</span></h1></li>
+      <li class="link1"><button class="get">Get the app</button></li>
+      <li class="link2"><button class="get">Become an Agent</button></li>
     </ul>
   </nav>
   <main>
     <section class="section1">
       <div class="one">
-        <h1><span>BOLD </span><span style="text-decoration: underline; color: #15A05D;">BETTER
-          </span><br><span>BANKING</span></h1>
+        <div class="reveal">
+          <h1><span id="create">BOLD </span><span style="text-decoration: underline; color: #15A05D;" id="create"> BETTER
+          </span><br></h1>
+          <h1><span id="create">BANKING</span></h1>
+        </div>
         <p>Dependable Agency banking platform; <br> For the Unbanked, Underbanked, and Underserved communities.</p>
         <button class="get">Become an Agent</button>
       </div>
@@ -150,7 +153,9 @@
       </div>
     </section>
     <section class="section5">
-      <h1>Download the <br> Agent Mobile App</h1>
+      <div class="reveal1">
+        <h1><span id="create1">Download the</span></h1><h1><span id="create1">Agent Mobile App</span></h1>
+      </div>
       <p>The agent mobile app is available on all stores. Download and get started</p>
       <div class="container1">
         <div class="card2">
@@ -249,5 +254,8 @@
     </section>
   </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin3.min.js"></script>
 <script src="toggle.js"></script>
 </html>
